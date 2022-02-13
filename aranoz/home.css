@@ -301,17 +301,17 @@ h3 {
 }
 .user-info{
     padding:4% 0 0 0;
-    position: relative;
-    height: 60px;
+    display: flex;
+    align-items: center;
+    height: auto;
     width: 100%;
     overflow: hidden;
 }
 .user-info input{
     border:0;
-    height: 60px;
-    width: 60%;
+    line-height:60px;
+    width: 100%;
     color: rgb(131, 131, 131);
-    position: relative;
 }
 .user-info button{
     background-color: rgb(255, 67, 57);
@@ -319,12 +319,15 @@ h3 {
     color: white;
     border-radius: 7px;
     height:60px;
-    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: content-box;
     text-align: center;
     text-decoration: none;
-    font-size: 150%;
+    font-size: 100%;
     margin:0%;
     position: relative;
+    white-space: nowrap;
 }
 .newsletter img{
     background-size: cover;
