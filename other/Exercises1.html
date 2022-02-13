@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercises1</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <table>
+        <tr>
+    <td>Username:</td>
+    <td><input type="text" id="username" name="username"></td>
+</tr>
+<tr>
+    <td>Password:</td>
+    <td><input type="text" id="password" name="password"></td>
+</tr>
+<tr>
+    <td><button id="btnLogin" onclick="login()">Login</button></td>
+</tr>
+</table>
+</body>
+<script>
+    function login() {
+        if(document.querySelector("#username").value != "" && document.querySelector("#password").value != "") {
+            alert("Login Successful");
+        } else {
+            alert("Login Failed");
+        }
+    }
+</script>
+</html>

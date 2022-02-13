@@ -1,0 +1,19 @@
+#phi{
+    background-color: #2bac36;
+    color: rgb(184, 42, 42);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 100px;
+    font-weight: bold;
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+    color: #caa837;
+}

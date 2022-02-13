@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+<script>
+  
+   fetch('https://reqres.in/api/users')
+ .then(response => response.json())
+ .then(json => {
+    for(let i=0;i<json.data.length;i++){
+      let table = document.getElementById('table');
+      let info = json.data[i];
+      let row = table.insertRow(table.rows.length);
+      let cell1 = row.insertCell(0);
+      let cell2 = row.insertCell(1);
+      let cell3 = row.insertCell(2);
+
+      cell1.innerHTML = info.id;
+      cell2.innerHTML = info.first_name;
+      cell3.innerHTML = info.last_name;
+    }
+ })
+
+   function adding(){
+      let table = document.querySelector('table');
+      let firstname = document.querySelector('#firstname');
+      let lastname = document.querySelector('#lastname');
+      let email = document.querySelector('#email');
+      let row = table.insertRow(table.rows.length);
+      let cell1 = row.insertCell(0);
+      let cell2 = row.insertCell(1);
+      let cell3 = row.insertCell(2);
+   
+      cell1.innerHTML = firstname.value;
+      cell2.innerHTML = lastname.value;
+      cell3.innerHTML = email.value;
+   }
+</script>
+<style>
+   table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+  <table id="table">
+   <tr>
+      <th>Firstname</th>
+      <th>Lastname</th> 
+      <th>Email</th>
+   </tr>
+   </table>
+   <input type="text" id="firstname" placeholder="Firstname">
+   <input type="text" id="lastname" placeholder="Lastname">
+   <input type="text" id="email" placeholder="Email">
+   <button id="submit" onclick="adding()">Submit</button>
+</body>
+</html>

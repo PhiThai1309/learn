@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercises1</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <table>
+        <thead>
+            <th colspan="2">Novell Services Login</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" id="Username"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" id="Password"></td>
+            </tr>
+            <tr>
+                <td>City of Emplyment:</td>
+                <td><input type="text" id="City"></td>
+            </tr>
+            <tr>
+                <td>Web server</td>
+                <td><select name = "server">
+                        <option value="" disabled selected hidden>Choose your option</option>
+                        <option value = "1">1</option>
+                        <option value = "2">2</option>
+                </td>
+            </tr>
+            <tr><td>  </td></tr>
+            <tr>
+                <td rowspan="5">Please specify your role</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="role" value="1">Admin</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="role" value="2">Engineer</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="role" value="3">Manager</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="role" value="4">Guest</td>
+            </tr>
+            <tr><td>  </td></tr>
+            <tr>
+                <td rowspan="4">Single Sign-on to the following</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="sso" value="1">Mail</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="sso" value="2">Payroll</td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" name="sso" value="3">Self-service</td>
+            </tr>
+            <tr><td rowspan="2">  </td></tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </tbody>  
+    </table>
+</body>
+</html>
